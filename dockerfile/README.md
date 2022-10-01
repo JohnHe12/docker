@@ -1,11 +1,16 @@
 # Dockfile
+
+```console
+docker build -t <name> .
+```
 ## dockfile 的常用指令
 
 * FROM 
 >指定base的镜像
 
-* MAINTAINER
+* MAINTAINER has been deprecated instead LABEL
 >设置镜像的作者可以是任意的字符串
+>LABEL maintainer=....
 
 * COPY
 >将文件从 build context 复制到镜像。
